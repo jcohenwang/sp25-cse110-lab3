@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+SA:wght@100..400&display=swap');
+  
+/* write down comments to make your css easier to read */
+
+body {
+    background-color: hsl(200, 100%, 95%); /* hue, saturation, lightness, alpha values */
+    color: gray; /* color name */
+}
+
+header h1 {
+    color: rgb(250, 149, 18); /* red, green, blue, alpha values */
+}
+
+h2 {
+    color: #50b032; /* hex codes */
+}
+
+nav a {
+    color: rgba(31, 219, 121, 0.8); /* rgba color */
+    margin: 10px;
+}
+
+footer p {
+    color: color(display-p3 1 0 0); /* predefined color space, values for color space*/
+}
+
+main section#agenda {
+    background-color: color-mix(in srgb, rgb(30, 0, 255) 30%, rgb(221, 255, 0) 70%); /*method to mix colors, values & percentages of color*/
+    padding-top: 10px;
+    padding-right: 1in;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+main section#recording {
+    position: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --variable: #c7ffe1;
+}
+
+main {
+    background-color: var(--variable, #ffb9b9);
+    position: relative;
+    padding: 2rem;
+    font-size: 1.5em;
+    line-height: 120%;
+    width: 1500px;
+    height: 800pt;
+    max-width: 120vw;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    align-items: start;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main section#new {
+    position: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+form {
+    margin: auto 40px 20px auto;
+}
+
+fieldset {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+}
+
+footer {
+    padding: 10px 20px 10px 20px;
+}
+
+img {
+    border-style: solid;
+    border-color: #ff57eb;
+    border-width: 5px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    border: 2px dashed red;
+}
+
+nav ul li {
+    text-decoration: underline;
+    text-align: left;
+}
+
+details {
+    display: block;
+}
+
+span {
+    display: inline-block;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(225, 255, 176);
+    z-index: 1000;
+}
+
+img {
+    position: relative;
+}
+
+a:hover {
+    color: green;
+}
+
+button:active {
+    background-color: yellow;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+.flexer {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 ~ p {
+    color: teal;
+}
+
+h2 + p {
+    margin-top: 0;
+}
+
+section#new.flexer {
+    border: 2px dotted pink;
+}
+
+section:has(video) {
+    border: 2px solid green;
+}
+
+@layer nested {
+    nav {
+      ul {
+        li {
+          background-color: #e1ffe1;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      font-size: 14px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+    }
+}
