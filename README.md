@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[https://jcohenwang.github.io/Lab2_Starter/](https://jcohenwang.github.io/Lab2_Starter/)
+# Lab 3
+[https://jcohenwang.github.io/sp25-cse110-lab3/](https://jcohenwang.github.io/sp25-cse110-lab3/)
